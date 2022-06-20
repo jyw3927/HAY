@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -15,7 +16,16 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8pX-1G-axS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="Primary"/>
+                        <color key="tintColor" name="OnPrimary"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" name="OnPrimary"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" name="Disabled"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="fWR-9B-Vhx" kind="relationship" relationship="viewControllers" id="PTF-qa-vPW"/>
@@ -38,7 +48,7 @@
                         <viewLayoutGuide key="safeArea" id="nJc-g2-Mhn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="대화" id="M4Y-X1-fv6"/>
+                    <tabBarItem key="tabBarItem" title="대화" image="conversation" id="M4Y-X1-fv6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3N2-LV-aQp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,7 +64,9 @@
                         <viewLayoutGuide key="safeArea" id="EIE-h8-Pcu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="게임" id="RJj-qC-xWr"/>
+                    <tabBarItem key="tabBarItem" title="게임" image="game" id="RJj-qC-xWr">
+                        <color key="badgeColor" name="OnPrimary"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJp-OS-x4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,7 +82,7 @@
                         <viewLayoutGuide key="safeArea" id="xHm-DZ-h9r"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="심리테스트" id="nGu-tz-Zfr"/>
+                    <tabBarItem key="tabBarItem" title="심리테스트" image="test" id="nGu-tz-Zfr"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxa-CY-bCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -87,7 +99,7 @@
                         <viewLayoutGuide key="safeArea" id="Gc9-O7-aXm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="마이페이지" id="Rt9-ga-Ldt"/>
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="mypage" id="Rt9-ga-Ldt"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5c-oM-60K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -96,6 +108,19 @@
         </scene>
     </scenes>
     <resources>
+        <image name="conversation" width="28" height="28"/>
+        <image name="game" width="32" height="32"/>
+        <image name="mypage" width="32" height="32"/>
+        <image name="test" width="32" height="32"/>
+        <namedColor name="Disabled">
+            <color red="1" green="1" blue="1" alpha="0.60000002384185791" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OnPrimary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
+            <color red="0.027000000700354576" green="0.40799999237060547" blue="0.62400001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
