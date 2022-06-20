@@ -7,6 +7,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansKR-Bold.otf">
+            <string>NotoSansKR-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="GaT-Gy-EW6">
@@ -51,8 +56,8 @@
                                 <color key="backgroundColor" name="Primary"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대화" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g37-jk-07N">
-                                <rect key="frame" x="189.5" y="50" width="35" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <rect key="frame" x="189.5" y="50" width="35" height="28"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans KR" pointSize="19"/>
                                 <color key="textColor" name="OnPrimary"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -86,8 +91,8 @@
                                 <color key="backgroundColor" name="Primary"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="게임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8C-FA-ZdJ">
-                                <rect key="frame" x="189.5" y="50" width="35" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <rect key="frame" x="189.5" y="50" width="35" height="28"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans KR" pointSize="19"/>
                                 <color key="textColor" name="OnPrimary"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -123,8 +128,8 @@
                                 <color key="backgroundColor" name="Primary"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심리테스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aL1-bh-94q">
-                                <rect key="frame" x="163.5" y="50" width="87" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <rect key="frame" x="163.5" y="50" width="87.5" height="28"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans KR" pointSize="19"/>
                                 <color key="textColor" name="OnPrimary"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -159,8 +164,8 @@
                                 <color key="backgroundColor" name="Primary"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마이페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6a-Rt-QPc">
-                                <rect key="frame" x="163.5" y="50" width="87" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <rect key="frame" x="163.5" y="50" width="87.5" height="28"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans KR" pointSize="19"/>
                                 <color key="textColor" name="OnPrimary"/>
                                 <nil key="highlightedColor"/>
                             </label>
