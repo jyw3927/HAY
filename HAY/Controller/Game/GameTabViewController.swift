@@ -9,7 +9,7 @@ import UIKit
 
 class GameTabViewController: UIViewController {
 
-    @IBOutlet var background: UIView!
+    @IBOutlet weak var background: UIView!
     
     override func viewDidLoad() {
         

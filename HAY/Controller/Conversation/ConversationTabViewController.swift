@@ -8,13 +8,14 @@
 import UIKit
 
 class ConversationTabViewController: UIViewController {
-
-    @IBOutlet var background: UIView!
+    
+    @IBOutlet weak var background: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         background.setGradient(color1: .primary ?? .white, color2: .subPrimary ?? .black)
+        
     }
     
 

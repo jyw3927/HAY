@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -45,17 +44,33 @@
                     <view key="view" contentMode="scaleToFill" id="RWO-R4-ubL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsE-jz-iEm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Primary"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대화" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g37-jk-07N">
+                                <rect key="frame" x="189.5" y="50" width="35" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" name="OnPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nJc-g2-Mhn"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g37-jk-07N" firstAttribute="centerX" secondItem="RWO-R4-ubL" secondAttribute="centerX" id="K2i-sT-ELE"/>
+                            <constraint firstItem="g37-jk-07N" firstAttribute="top" secondItem="RWO-R4-ubL" secondAttribute="top" constant="50" id="VJb-ca-r38"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="대화" image="conversation" id="M4Y-X1-fv6"/>
                     <connections>
-                        <outlet property="background" destination="RWO-R4-ubL" id="BvU-xO-Hjm"/>
+                        <outlet property="background" destination="gsE-jz-iEm" id="J1b-XA-dzA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3N2-LV-aQp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-746" y="287"/>
+            <point key="canvasLocation" x="-746.37681159420299" y="286.60714285714283"/>
         </scene>
         <!--게임-->
         <scene sceneID="6aJ-Ol-1hQ">
@@ -64,19 +79,35 @@
                     <view key="view" contentMode="scaleToFill" id="5vw-ZV-hxc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lT8-ZB-Dtz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Primary"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="게임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8C-FA-ZdJ">
+                                <rect key="frame" x="189.5" y="50" width="35" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" name="OnPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="EIE-h8-Pcu"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x8C-FA-ZdJ" firstAttribute="top" secondItem="5vw-ZV-hxc" secondAttribute="top" constant="50" id="woO-tx-oCV"/>
+                            <constraint firstItem="x8C-FA-ZdJ" firstAttribute="centerX" secondItem="5vw-ZV-hxc" secondAttribute="centerX" id="yOl-YE-CQu"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="게임" image="game" id="RJj-qC-xWr">
                         <color key="badgeColor" name="OnPrimary"/>
                     </tabBarItem>
                     <connections>
-                        <outlet property="background" destination="5vw-ZV-hxc" id="yBK-Ou-CHn"/>
+                        <outlet property="background" destination="lT8-ZB-Dtz" id="muJ-JB-hJA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJp-OS-x4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-52" y="287"/>
+            <point key="canvasLocation" x="-52.173913043478265" y="286.60714285714283"/>
         </scene>
         <!--심리테스트-->
         <scene sceneID="f4D-qc-jCf">
@@ -85,18 +116,34 @@
                     <view key="view" contentMode="scaleToFill" id="nOY-Bc-WBx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mpn-36-0tW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Primary"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심리테스트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aL1-bh-94q">
+                                <rect key="frame" x="163.5" y="50" width="87" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" name="OnPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xHm-DZ-h9r"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aL1-bh-94q" firstAttribute="top" secondItem="nOY-Bc-WBx" secondAttribute="top" constant="50" id="86H-Ao-Ze0"/>
+                            <constraint firstItem="aL1-bh-94q" firstAttribute="centerX" secondItem="nOY-Bc-WBx" secondAttribute="centerX" id="OTM-K9-09H"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="심리테스트" image="test" id="nGu-tz-Zfr"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="background" destination="nOY-Bc-WBx" id="9uT-re-h27"/>
+                        <outlet property="background" destination="Mpn-36-0tW" id="VXn-7X-kC1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxa-CY-bCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="649" y="287"/>
+            <point key="canvasLocation" x="647.82608695652175" y="286.60714285714283"/>
         </scene>
         <!--마이페이지-->
         <scene sceneID="xMi-ho-XfO">
@@ -105,18 +152,34 @@
                     <view key="view" contentMode="scaleToFill" id="4Dr-Q1-66n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ppw-IW-VOw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Primary"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마이페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6a-Rt-QPc">
+                                <rect key="frame" x="163.5" y="50" width="87" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" name="OnPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Gc9-O7-aXm"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S6a-Rt-QPc" firstAttribute="top" secondItem="4Dr-Q1-66n" secondAttribute="top" constant="50" id="mnV-Ik-r6U"/>
+                            <constraint firstItem="S6a-Rt-QPc" firstAttribute="centerX" secondItem="4Dr-Q1-66n" secondAttribute="centerX" id="zhK-25-qVj"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="마이페이지" image="mypage" id="Rt9-ga-Ldt"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="background" destination="4Dr-Q1-66n" id="9Y1-qz-8bC"/>
+                        <outlet property="background" destination="ppw-IW-VOw" id="EJl-1G-IQw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5c-oM-60K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1333" y="287"/>
+            <point key="canvasLocation" x="1331.8840579710145" y="286.60714285714283"/>
         </scene>
     </scenes>
     <resources>
@@ -133,8 +196,5 @@
         <namedColor name="Primary">
             <color red="0.027000000700354576" green="0.40799999237060547" blue="0.62400001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

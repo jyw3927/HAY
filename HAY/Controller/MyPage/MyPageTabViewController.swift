@@ -9,7 +9,7 @@ import UIKit
 
 class MyPageTabViewController: UIViewController {
 
-    @IBOutlet var background: UIView!
+    @IBOutlet weak var background: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
