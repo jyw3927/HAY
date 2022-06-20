@@ -41,7 +41,7 @@
         <!--대화-->
         <scene sceneID="9tc-uQ-euu">
             <objects>
-                <viewController id="fWR-9B-Vhx" sceneMemberID="viewController">
+                <viewController id="fWR-9B-Vhx" customClass="ConversationTabViewController" customModule="HAY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RWO-R4-ubL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,6 +49,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="대화" image="conversation" id="M4Y-X1-fv6"/>
+                    <connections>
+                        <outlet property="background" destination="RWO-R4-ubL" id="BvU-xO-Hjm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3N2-LV-aQp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,7 +60,7 @@
         <!--게임-->
         <scene sceneID="6aJ-Ol-1hQ">
             <objects>
-                <viewController id="Ivb-R5-KTq" sceneMemberID="viewController">
+                <viewController id="Ivb-R5-KTq" customClass="GameTabViewController" customModule="HAY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5vw-ZV-hxc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,6 +70,9 @@
                     <tabBarItem key="tabBarItem" title="게임" image="game" id="RJj-qC-xWr">
                         <color key="badgeColor" name="OnPrimary"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="background" destination="5vw-ZV-hxc" id="yBK-Ou-CHn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJp-OS-x4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -75,7 +81,7 @@
         <!--심리테스트-->
         <scene sceneID="f4D-qc-jCf">
             <objects>
-                <viewController id="5jN-ax-BY3" sceneMemberID="viewController">
+                <viewController id="5jN-ax-BY3" customClass="TestTabViewController" customModule="HAY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nOY-Bc-WBx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -84,6 +90,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="심리테스트" image="test" id="nGu-tz-Zfr"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="background" destination="nOY-Bc-WBx" id="9uT-re-h27"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxa-CY-bCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,7 +101,7 @@
         <!--마이페이지-->
         <scene sceneID="xMi-ho-XfO">
             <objects>
-                <viewController id="WaS-fq-be6" sceneMemberID="viewController">
+                <viewController id="WaS-fq-be6" customClass="MyPageTabViewController" customModule="HAY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Dr-Q1-66n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,6 +110,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="마이페이지" image="mypage" id="Rt9-ga-Ldt"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="background" destination="4Dr-Q1-66n" id="9Y1-qz-8bC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5c-oM-60K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
