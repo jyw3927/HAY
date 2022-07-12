@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="testCell" id="3sW-pa-r0N" customClass="TestTabViewCell" customModule="HAY" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="214"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iVz-Ns-psv">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="214"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ftC-Vn-olQ">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="214"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XgX-xo-ZUK">
+                        <rect key="frame" x="0.0" y="170" width="180" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osp-ib-omi">
+                                <rect key="frame" x="11" y="0.0" width="169" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="CardBar"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="osp-ib-omi" secondAttribute="trailing" id="4Tk-3Q-HFg"/>
+                            <constraint firstItem="osp-ib-omi" firstAttribute="leading" secondItem="XgX-xo-ZUK" secondAttribute="leading" constant="11" id="kBf-lW-DV5"/>
+                            <constraint firstAttribute="bottom" secondItem="osp-ib-omi" secondAttribute="bottom" id="sXG-0g-EXI"/>
+                            <constraint firstItem="osp-ib-omi" firstAttribute="top" secondItem="XgX-xo-ZUK" secondAttribute="top" id="xCx-sU-eef"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XgX-xo-ZUK" firstAttribute="leading" secondItem="iVz-Ns-psv" secondAttribute="leading" id="3xh-38-Huf"/>
+                    <constraint firstAttribute="trailing" secondItem="ftC-Vn-olQ" secondAttribute="trailing" id="5Af-ii-zaP"/>
+                    <constraint firstAttribute="bottom" secondItem="ftC-Vn-olQ" secondAttribute="bottom" id="UQW-11-Krr"/>
+                    <constraint firstAttribute="trailing" secondItem="XgX-xo-ZUK" secondAttribute="trailing" id="UVD-sW-WnB"/>
+                    <constraint firstAttribute="bottom" secondItem="XgX-xo-ZUK" secondAttribute="bottom" id="ZZh-af-f5h"/>
+                    <constraint firstItem="ftC-Vn-olQ" firstAttribute="leading" secondItem="iVz-Ns-psv" secondAttribute="leading" id="kYf-dW-4bD"/>
+                    <constraint firstItem="XgX-xo-ZUK" firstAttribute="top" secondItem="iVz-Ns-psv" secondAttribute="top" constant="170" id="mcX-Nd-g1S"/>
+                    <constraint firstItem="ftC-Vn-olQ" firstAttribute="top" secondItem="iVz-Ns-psv" secondAttribute="top" id="sgo-Rg-i3W"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <point key="canvasLocation" x="76.811594202898561" y="72.991071428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="CardBar">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.20000000298023224" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
