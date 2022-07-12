@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,9 +53,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsE-jz-iEm">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsE-jz-iEm">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="Primary"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대화" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g37-jk-07N">
@@ -66,8 +66,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nJc-g2-Mhn"/>
                         <constraints>
+                            <constraint firstItem="gsE-jz-iEm" firstAttribute="leading" secondItem="nJc-g2-Mhn" secondAttribute="leading" id="4Zm-cX-jMt"/>
+                            <constraint firstAttribute="bottom" secondItem="gsE-jz-iEm" secondAttribute="bottom" id="B89-Ga-SQk"/>
                             <constraint firstItem="g37-jk-07N" firstAttribute="centerX" secondItem="RWO-R4-ubL" secondAttribute="centerX" id="K2i-sT-ELE"/>
+                            <constraint firstItem="gsE-jz-iEm" firstAttribute="top" secondItem="RWO-R4-ubL" secondAttribute="top" id="MZV-2r-d2O"/>
                             <constraint firstItem="g37-jk-07N" firstAttribute="top" secondItem="RWO-R4-ubL" secondAttribute="top" constant="50" id="VJb-ca-r38"/>
+                            <constraint firstItem="gsE-jz-iEm" firstAttribute="trailing" secondItem="nJc-g2-Mhn" secondAttribute="trailing" id="d3a-xT-cof"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="대화" image="conversation" id="M4Y-X1-fv6"/>
@@ -87,10 +91,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lT8-ZB-Dtz">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lT8-ZB-Dtz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vOP-C8-uWc">
+                                        <rect key="frame" x="20" y="120" width="374" height="693"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" name="Primary"/>
+                                <constraints>
+                                    <constraint firstItem="vOP-C8-uWc" firstAttribute="leading" secondItem="lT8-ZB-Dtz" secondAttribute="leading" constant="20" id="Nfm-Cp-BA5"/>
+                                    <constraint firstAttribute="trailing" secondItem="vOP-C8-uWc" secondAttribute="trailing" constant="20" id="Vfe-fE-VNv"/>
+                                    <constraint firstAttribute="bottom" secondItem="vOP-C8-uWc" secondAttribute="bottom" id="gqY-i6-3kr"/>
+                                    <constraint firstItem="vOP-C8-uWc" firstAttribute="top" secondItem="lT8-ZB-Dtz" secondAttribute="top" constant="120" id="rbm-P4-QY0"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="게임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8C-FA-ZdJ">
                                 <rect key="frame" x="189.5" y="50" width="35" height="28"/>
@@ -101,6 +116,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EIE-h8-Pcu"/>
                         <constraints>
+                            <constraint firstItem="lT8-ZB-Dtz" firstAttribute="trailing" secondItem="EIE-h8-Pcu" secondAttribute="trailing" id="Al3-85-MaW"/>
+                            <constraint firstItem="lT8-ZB-Dtz" firstAttribute="top" secondItem="5vw-ZV-hxc" secondAttribute="top" id="eoc-bD-lKU"/>
+                            <constraint firstAttribute="bottom" secondItem="lT8-ZB-Dtz" secondAttribute="bottom" id="fHJ-hu-FfU"/>
+                            <constraint firstItem="lT8-ZB-Dtz" firstAttribute="leading" secondItem="EIE-h8-Pcu" secondAttribute="leading" id="gUD-Vc-9bs"/>
                             <constraint firstItem="x8C-FA-ZdJ" firstAttribute="top" secondItem="5vw-ZV-hxc" secondAttribute="top" constant="50" id="woO-tx-oCV"/>
                             <constraint firstItem="x8C-FA-ZdJ" firstAttribute="centerX" secondItem="5vw-ZV-hxc" secondAttribute="centerX" id="yOl-YE-CQu"/>
                         </constraints>
@@ -284,5 +303,8 @@
         <namedColor name="Primary">
             <color red="0.027000000700354576" green="0.40799999237060547" blue="0.62400001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
