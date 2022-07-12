@@ -53,9 +53,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsE-jz-iEm">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsE-jz-iEm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <color key="backgroundColor" name="Primary"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대화" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g37-jk-07N">
@@ -67,8 +66,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nJc-g2-Mhn"/>
                         <constraints>
+                            <constraint firstItem="gsE-jz-iEm" firstAttribute="top" secondItem="RWO-R4-ubL" secondAttribute="top" id="7xL-gp-rmT"/>
+                            <constraint firstItem="gsE-jz-iEm" firstAttribute="leading" secondItem="nJc-g2-Mhn" secondAttribute="leading" id="8o0-sg-1dN"/>
+                            <constraint firstItem="gsE-jz-iEm" firstAttribute="trailing" secondItem="nJc-g2-Mhn" secondAttribute="trailing" id="Cq4-xU-tKa"/>
                             <constraint firstItem="g37-jk-07N" firstAttribute="centerX" secondItem="RWO-R4-ubL" secondAttribute="centerX" id="K2i-sT-ELE"/>
                             <constraint firstItem="g37-jk-07N" firstAttribute="top" secondItem="RWO-R4-ubL" secondAttribute="top" constant="50" id="VJb-ca-r38"/>
+                            <constraint firstAttribute="bottom" secondItem="gsE-jz-iEm" secondAttribute="bottom" id="vzV-zz-B8B"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="대화" image="conversation" id="M4Y-X1-fv6"/>
@@ -253,9 +256,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ppw-IW-VOw">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ppw-IW-VOw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <color key="backgroundColor" name="Primary"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마이페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6a-Rt-QPc">
@@ -267,6 +269,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gc9-O7-aXm"/>
                         <constraints>
+                            <constraint firstItem="ppw-IW-VOw" firstAttribute="leading" secondItem="Gc9-O7-aXm" secondAttribute="leading" id="1Nr-9Y-q0V"/>
+                            <constraint firstItem="ppw-IW-VOw" firstAttribute="top" secondItem="4Dr-Q1-66n" secondAttribute="top" id="YR1-8S-59O"/>
+                            <constraint firstItem="ppw-IW-VOw" firstAttribute="trailing" secondItem="Gc9-O7-aXm" secondAttribute="trailing" id="ary-Bg-uA1"/>
+                            <constraint firstAttribute="bottom" secondItem="ppw-IW-VOw" secondAttribute="bottom" id="kID-3V-5uy"/>
                             <constraint firstItem="S6a-Rt-QPc" firstAttribute="top" secondItem="4Dr-Q1-66n" secondAttribute="top" constant="50" id="mnV-Ik-r6U"/>
                             <constraint firstItem="S6a-Rt-QPc" firstAttribute="centerX" secondItem="4Dr-Q1-66n" secondAttribute="centerX" id="zhK-25-qVj"/>
                         </constraints>
