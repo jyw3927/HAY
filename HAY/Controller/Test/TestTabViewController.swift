@@ -12,20 +12,22 @@ class TestTabViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var collectionView: UICollectionView!
     
     let testList = Test.data
+    let cellReuseIdentifier = "testCell"
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return testList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "testCell", for: indexPath) as?
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as?
                 TestCell else {
                     return UICollectionViewCell()
                 }
+        let target = testList[indexPath.row]
         
-        let img = UIImage(named: "\(testList[indexPath.row].image).png")
+        let img = UIImage(named: "\(target.image).png")
         cell.testImage?.image = img
-        cell.testLabel?.text = testList[indexPath.row].title
+        cell.testLabel?.text = target.title
         
         return cell
     }

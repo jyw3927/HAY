@@ -21,6 +21,7 @@
 		52CEE4932860415900265C2B /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52CEE4902860415900265C2B /* NotoSansKR-Bold.otf */; };
 		52CEE4942860415900265C2B /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52CEE4912860415900265C2B /* NotoSansKR-Regular.otf */; };
 		52CEE4952860415900265C2B /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52CEE4922860415900265C2B /* NotoSansKR-Medium.otf */; };
+		B841A933287E412600926AA2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B841A932287E412600926AA2 /* Game.swift */; };
 		B8645E1F287C145E00D0BC0F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8645E1E287C145E00D0BC0F /* Test.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		52CEE4902860415900265C2B /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		52CEE4912860415900265C2B /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
 		52CEE4922860415900265C2B /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		B841A932287E412600926AA2 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		B8645E1E287C145E00D0BC0F /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,11 +76,11 @@
 		52B6A414285F017600F83C11 /* HAY */ = {
 			isa = PBXGroup;
 			children = (
-				B8645E1D287C145000D0BC0F /* Models */,
 				52CEE48F286040F800265C2B /* Fonts */,
 				52CEE47F285F0AA300265C2B /* Extensions */,
+				B8645E1D287C145000D0BC0F /* Models */,
 				52B6A429285F02D300F83C11 /* Model */,
-				52B6A41B285F017600F83C11 /* Main.storyboard */,
+				B841A934287E427C00926AA2 /* View */,
 				52B6A42B285F02E800F83C11 /* Controller */,
 				52B6A415285F017600F83C11 /* AppDelegate.swift */,
 				52B6A417285F017600F83C11 /* SceneDelegate.swift */,
@@ -158,10 +160,19 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		B841A934287E427C00926AA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52B6A41B285F017600F83C11 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B8645E1D287C145000D0BC0F /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				B8645E1E287C145E00D0BC0F /* Test.swift */,
+				B841A932287E412600926AA2 /* Game.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -241,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52CEE4842860335300265C2B /* TestTabViewController.swift in Sources */,
+				B841A933287E412600926AA2 /* Game.swift in Sources */,
 				52CEE488286033B300265C2B /* MyPageTabViewController.swift in Sources */,
 				B8645E1F287C145E00D0BC0F /* Test.swift in Sources */,
 				52B6A41A285F017600F83C11 /* GameTabViewController.swift in Sources */,
