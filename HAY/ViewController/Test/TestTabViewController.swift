@@ -12,6 +12,7 @@ class TestTabViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var collectionView: UICollectionView!
     
     let testList = Test.data
+    let cellName = "TestTabViewCell"
     let cellReuseIdentifier = "testCell"
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -20,7 +21,7 @@ class TestTabViewController: UIViewController, UICollectionViewDataSource, UICol
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath) as?
-                TestCell else {
+                TestTabViewCell else {
                     return UICollectionViewCell()
                 }
         let target = testList[indexPath.row]
@@ -39,14 +40,14 @@ class TestTabViewController: UIViewController, UICollectionViewDataSource, UICol
 
         background.setGradient(color1: .primary ?? .white, color2: .subPrimary ?? .black)
         
+        registerXib()
+        
         collectionView.backgroundColor = UIColor.clear.withAlphaComponent(0)
     }
-
-}
-
-class TestCell: UICollectionViewCell {
     
-    @IBOutlet weak var testImage: UIImageView!
-    @IBOutlet weak var testLabel: UILabel!
-    
+    private func registerXib() {
+        let nibName = UINib(nibName: cellName, bundle: nil)
+        collectionView.register(nibName, forCellWithReuseIdentifier: cellReuseIdentifier)
+    }
+
 }

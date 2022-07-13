@@ -12,7 +12,8 @@ class GameTabViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var tableView: UITableView!
     
     let gameList = Game.data
-    let cellReuseIdentifier = "GameCell"
+    let cellName = "GameTabViewCell"
+    let cellReuseIdentifier = "gameCell"
     let cellSpacingHeight: CGFloat = 1
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -47,27 +48,16 @@ class GameTabViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         background.setGradient(color1: .primary ?? .white, color2: .subPrimary ?? .black)
         
+        registerXib()
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = UIColor.clear.withAlphaComponent(0)
     }
-
-}
-
-class GameTabViewCell: UITableViewCell {
-
-    @IBOutlet weak var gameImage: UIImageView!
-    @IBOutlet weak var gameLabel: UILabel!
     
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        // Initialization code
-//    }
+    private func registerXib() {
+        let nibName = UINib(nibName: cellName, bundle: nil)
+        tableView.register(nibName, forCellReuseIdentifier: cellReuseIdentifier)
+    }
 
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
-    
 }

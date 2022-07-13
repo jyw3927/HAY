@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansKR-Bold.otf">
+            <string>NotoSansKR-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="gameCell" rowHeight="134" id="n19-gQ-Fyo" userLabel="GameTabViewCell" customClass="GameTabViewCell" customModule="HAY" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="134"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n19-gQ-Fyo" id="dj2-Th-MzD">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aWw-rC-YqR">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="134"/>
+                    </imageView>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGI-j9-5IB">
+                        <rect key="frame" x="0.0" y="84" width="374" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9s-dA-X8C">
+                                <rect key="frame" x="12" y="10" width="350" height="30"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans KR" pointSize="23"/>
+                                <color key="textColor" name="OnPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="CardBar"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="b9s-dA-X8C" secondAttribute="bottom" constant="10" id="1Js-3d-1tV"/>
+                            <constraint firstItem="b9s-dA-X8C" firstAttribute="top" secondItem="sGI-j9-5IB" secondAttribute="top" constant="10" id="Og6-kb-YoK"/>
+                            <constraint firstItem="b9s-dA-X8C" firstAttribute="leading" secondItem="sGI-j9-5IB" secondAttribute="leading" constant="12" id="mky-aS-oKR"/>
+                            <constraint firstAttribute="trailing" secondItem="b9s-dA-X8C" secondAttribute="trailing" constant="12" id="ykD-ih-CJw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="aWw-rC-YqR" secondAttribute="trailing" id="26Y-QM-3GW"/>
+                    <constraint firstItem="aWw-rC-YqR" firstAttribute="leading" secondItem="dj2-Th-MzD" secondAttribute="leading" id="AV0-2H-ZiH"/>
+                    <constraint firstItem="sGI-j9-5IB" firstAttribute="top" secondItem="dj2-Th-MzD" secondAttribute="top" constant="84" id="RTc-HT-cNP"/>
+                    <constraint firstAttribute="trailing" secondItem="sGI-j9-5IB" secondAttribute="trailing" id="YxP-98-dNv"/>
+                    <constraint firstAttribute="bottom" secondItem="aWw-rC-YqR" secondAttribute="bottom" id="qK0-Ee-X3E"/>
+                    <constraint firstItem="sGI-j9-5IB" firstAttribute="leading" secondItem="dj2-Th-MzD" secondAttribute="leading" id="uFk-gt-Ujs"/>
+                    <constraint firstItem="aWw-rC-YqR" firstAttribute="top" secondItem="dj2-Th-MzD" secondAttribute="top" id="wdO-gW-FEA"/>
+                    <constraint firstAttribute="bottom" secondItem="sGI-j9-5IB" secondAttribute="bottom" id="xqR-Vv-MKx"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <integer key="value" value="16"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="gameImage" destination="aWw-rC-YqR" id="bko-CD-x5i"/>
+                <outlet property="gameLabel" destination="b9s-dA-X8C" id="87f-21-2c7"/>
+            </connections>
+            <point key="canvasLocation" x="86" y="-58"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="CardBar">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.20000000298023224" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OnPrimary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

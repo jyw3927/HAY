@@ -22,6 +22,13 @@
 		52CEE4942860415900265C2B /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52CEE4912860415900265C2B /* NotoSansKR-Regular.otf */; };
 		52CEE4952860415900265C2B /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 52CEE4922860415900265C2B /* NotoSansKR-Medium.otf */; };
 		B841A933287E412600926AA2 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B841A932287E412600926AA2 /* Game.swift */; };
+		B841A93B287E813800926AA2 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B841A93A287E813800926AA2 /* Conversation.swift */; };
+		B841A943287E837600926AA2 /* ConversationTabViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B841A942287E837600926AA2 /* ConversationTabViewCell.xib */; };
+		B841A94A287E909300926AA2 /* GameTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B841A948287E909200926AA2 /* GameTabViewCell.swift */; };
+		B841A94B287E909300926AA2 /* GameTabViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B841A949287E909200926AA2 /* GameTabViewCell.xib */; };
+		B841A94E287E973D00926AA2 /* TestTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B841A94C287E973D00926AA2 /* TestTabViewCell.swift */; };
+		B841A94F287E973D00926AA2 /* TestTabViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B841A94D287E973D00926AA2 /* TestTabViewCell.xib */; };
+		B841A951287E9BD300926AA2 /* ConversationTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B841A950287E9BD300926AA2 /* ConversationTabViewCell.swift */; };
 		B8645E1F287C145E00D0BC0F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8645E1E287C145E00D0BC0F /* Test.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +50,13 @@
 		52CEE4912860415900265C2B /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
 		52CEE4922860415900265C2B /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
 		B841A932287E412600926AA2 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		B841A93A287E813800926AA2 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		B841A942287E837600926AA2 /* ConversationTabViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConversationTabViewCell.xib; sourceTree = "<group>"; };
+		B841A948287E909200926AA2 /* GameTabViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTabViewCell.swift; sourceTree = "<group>"; };
+		B841A949287E909200926AA2 /* GameTabViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameTabViewCell.xib; sourceTree = "<group>"; };
+		B841A94C287E973D00926AA2 /* TestTabViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTabViewCell.swift; sourceTree = "<group>"; };
+		B841A94D287E973D00926AA2 /* TestTabViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestTabViewCell.xib; sourceTree = "<group>"; };
+		B841A950287E9BD300926AA2 /* ConversationTabViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTabViewCell.swift; sourceTree = "<group>"; };
 		B8645E1E287C145E00D0BC0F /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +95,7 @@
 				B8645E1D287C145000D0BC0F /* Models */,
 				52B6A429285F02D300F83C11 /* Model */,
 				B841A934287E427C00926AA2 /* View */,
-				52B6A42B285F02E800F83C11 /* Controller */,
+				52B6A42B285F02E800F83C11 /* ViewController */,
 				52B6A415285F017600F83C11 /* AppDelegate.swift */,
 				52B6A417285F017600F83C11 /* SceneDelegate.swift */,
 				52B6A41E285F017B00F83C11 /* Assets.xcassets */,
@@ -98,7 +112,7 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		52B6A42B285F02E800F83C11 /* Controller */ = {
+		52B6A42B285F02E800F83C11 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				52CEE48D286034C000265C2B /* Conversation */,
@@ -106,7 +120,7 @@
 				52CEE48C286034B500265C2B /* Test */,
 				52CEE48E286034D300265C2B /* MyPage */,
 			);
-			path = Controller;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		52CEE47F285F0AA300265C2B /* Extensions */ = {
@@ -164,8 +178,38 @@
 			isa = PBXGroup;
 			children = (
 				52B6A41B285F017600F83C11 /* Main.storyboard */,
+				B841A941287E836200926AA2 /* Conversation */,
+				B841A946287E903E00926AA2 /* Game */,
+				B841A947287E904500926AA2 /* Test */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B841A941287E836200926AA2 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				B841A942287E837600926AA2 /* ConversationTabViewCell.xib */,
+				B841A950287E9BD300926AA2 /* ConversationTabViewCell.swift */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		B841A946287E903E00926AA2 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				B841A948287E909200926AA2 /* GameTabViewCell.swift */,
+				B841A949287E909200926AA2 /* GameTabViewCell.xib */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		B841A947287E904500926AA2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				B841A94C287E973D00926AA2 /* TestTabViewCell.swift */,
+				B841A94D287E973D00926AA2 /* TestTabViewCell.xib */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		B8645E1D287C145000D0BC0F /* Models */ = {
@@ -173,6 +217,7 @@
 			children = (
 				B8645E1E287C145E00D0BC0F /* Test.swift */,
 				B841A932287E412600926AA2 /* Game.swift */,
+				B841A93A287E813800926AA2 /* Conversation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,10 +282,13 @@
 			files = (
 				52CEE4952860415900265C2B /* NotoSansKR-Medium.otf in Resources */,
 				52B6A422285F017B00F83C11 /* LaunchScreen.storyboard in Resources */,
+				B841A94F287E973D00926AA2 /* TestTabViewCell.xib in Resources */,
 				52B6A41F285F017B00F83C11 /* Assets.xcassets in Resources */,
 				52CEE4932860415900265C2B /* NotoSansKR-Bold.otf in Resources */,
+				B841A943287E837600926AA2 /* ConversationTabViewCell.xib in Resources */,
 				52B6A41D285F017600F83C11 /* Main.storyboard in Resources */,
 				52CEE4942860415900265C2B /* NotoSansKR-Regular.otf in Resources */,
+				B841A94B287E909300926AA2 /* GameTabViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +301,18 @@
 			files = (
 				52CEE4842860335300265C2B /* TestTabViewController.swift in Sources */,
 				B841A933287E412600926AA2 /* Game.swift in Sources */,
+				B841A94A287E909300926AA2 /* GameTabViewCell.swift in Sources */,
 				52CEE488286033B300265C2B /* MyPageTabViewController.swift in Sources */,
 				B8645E1F287C145E00D0BC0F /* Test.swift in Sources */,
 				52B6A41A285F017600F83C11 /* GameTabViewController.swift in Sources */,
+				B841A93B287E813800926AA2 /* Conversation.swift in Sources */,
 				52B6A416285F017600F83C11 /* AppDelegate.swift in Sources */,
+				B841A94E287E973D00926AA2 /* TestTabViewCell.swift in Sources */,
 				52B6A418285F017600F83C11 /* SceneDelegate.swift in Sources */,
 				52CEE482285F0B9F00265C2B /* Color.swift in Sources */,
 				52CEE47E285F0A3F00265C2B /* BGView.swift in Sources */,
 				52CEE4862860338300265C2B /* ConversationTabViewController.swift in Sources */,
+				B841A951287E9BD300926AA2 /* ConversationTabViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
