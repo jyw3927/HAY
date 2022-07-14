@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wyf-fD-CXd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="84j-eu-FUu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -15,10 +15,27 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Lsc-zD-JyS">
+            <objects>
+                <navigationController id="84j-eu-FUu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wZj-vR-g57">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wyf-fD-CXd" kind="relationship" relationship="rootViewController" id="mMm-2p-1x0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kbm-ay-fVp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-443" y="-321"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="GaT-Gy-EW6">
             <objects>
                 <tabBarController id="wyf-fD-CXd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="uTe-9o-J31"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="8pX-1G-axS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -43,7 +60,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FFz-ji-mbx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="284" y="-492"/>
+            <point key="canvasLocation" x="355" y="-321"/>
         </scene>
         <!--대화-->
         <scene sceneID="9tc-uQ-euu">
@@ -109,7 +126,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3N2-LV-aQp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-746.37681159420299" y="286.60714285714283"/>
+            <point key="canvasLocation" x="1341" y="-1699"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TEI-Al-QxT">
+            <objects>
+                <viewController id="RGA-xm-K8z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jdb-lp-C8A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sHA-EX-7Zg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" name="Primary"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4Dw-dm-aea"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="sHA-EX-7Zg" secondAttribute="bottom" id="2QI-wN-LDj"/>
+                            <constraint firstItem="sHA-EX-7Zg" firstAttribute="top" secondItem="jdb-lp-C8A" secondAttribute="top" id="CxM-xG-iwZ"/>
+                            <constraint firstItem="4Dw-dm-aea" firstAttribute="trailing" secondItem="sHA-EX-7Zg" secondAttribute="trailing" id="ngG-o6-1YB"/>
+                            <constraint firstItem="sHA-EX-7Zg" firstAttribute="leading" secondItem="4Dw-dm-aea" secondAttribute="leading" id="sAa-85-f8A"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5x-dI-SnV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2206" y="-1700"/>
         </scene>
         <!--게임-->
         <scene sceneID="6aJ-Ol-1hQ">
@@ -162,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJp-OS-x4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-52.173913043478265" y="286.60714285714283"/>
+            <point key="canvasLocation" x="1341" y="-1041"/>
         </scene>
         <!--심리테스트-->
         <scene sceneID="f4D-qc-jCf">
@@ -185,10 +229,6 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells/>
-                                        <connections>
-                                            <outlet property="dataSource" destination="5jN-ax-BY3" id="KXK-Er-D5v"/>
-                                            <outlet property="delegate" destination="5jN-ax-BY3" id="Obb-35-crg"/>
-                                        </connections>
                                     </collectionView>
                                 </subviews>
                                 <color key="backgroundColor" name="Primary"/>
@@ -224,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxa-CY-bCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="647.82608695652175" y="286.60714285714283"/>
+            <point key="canvasLocation" x="1341" y="-371"/>
         </scene>
         <!--마이페이지-->
         <scene sceneID="xMi-ho-XfO">
@@ -262,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5c-oM-60K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1331.8840579710145" y="286.60714285714283"/>
+            <point key="canvasLocation" x="1341" y="279"/>
         </scene>
     </scenes>
     <resources>

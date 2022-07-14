@@ -42,6 +42,8 @@ class TestTabViewController: UIViewController, UICollectionViewDataSource, UICol
         
         registerXib()
         
+        collectionView.delegate = self
+        collectionView.dataSource = self
         collectionView.backgroundColor = UIColor.clear.withAlphaComponent(0)
     }
     
