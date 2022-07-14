@@ -15,7 +15,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="conversationCell" id="teT-i4-E3w" customClass="ConversationTabViewCell" customModule="HAY" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="conversationCell" id="teT-i4-E3w" userLabel="ConversationTabViewCell" customClass="ConversationTabViewCell" customModule="HAY" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="200" height="320"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="buw-eU-7Et">
@@ -66,6 +66,18 @@
                     </view>
                 </subviews>
             </collectionViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                    <size key="value" width="0.0" height="30"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                    <real key="value" value="0.29999999999999999"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="conversationLabel" destination="sSj-fB-Dy9" id="W3A-SB-dms"/>
             </connections>

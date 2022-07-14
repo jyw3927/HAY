@@ -56,10 +56,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsE-jz-iEm">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                                 <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VvY-be-9ww">
-                                        <rect key="frame" x="0.0" y="109" width="414" height="595"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VvY-be-9ww">
+                                        <rect key="frame" x="0.0" y="200" width="414" height="463"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XLJ-9c-IAg">
                                             <size key="itemSize" width="128" height="128"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -79,6 +77,12 @@
                                     </collectionView>
                                 </subviews>
                                 <color key="backgroundColor" name="Primary"/>
+                                <constraints>
+                                    <constraint firstItem="VvY-be-9ww" firstAttribute="leading" secondItem="gsE-jz-iEm" secondAttribute="leading" id="Gi8-4j-Y38"/>
+                                    <constraint firstItem="VvY-be-9ww" firstAttribute="top" secondItem="gsE-jz-iEm" secondAttribute="top" constant="200" id="K7C-sZ-r8Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="VvY-be-9ww" secondAttribute="bottom" constant="150" id="bQn-XJ-X6S"/>
+                                    <constraint firstAttribute="trailing" secondItem="VvY-be-9ww" secondAttribute="trailing" id="xTl-07-LWU"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대화" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g37-jk-07N">
                                 <rect key="frame" x="189.5" y="50" width="35" height="28"/>
